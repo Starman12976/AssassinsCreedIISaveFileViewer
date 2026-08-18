@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "comment": "Contains the known or hypothesized names or functions of various different elements in the file.",
+  "primaryIDs": {
+    "ACDBFE00": "Body",
+    "523BBEBD": "Root Container",
+    "6750BD78": "Session Name",
+    "C2FC1171": "Session Photo",
+    "32C476EB": "Time Played",
+    "2B13F528": "Synchronization",
+    "1B19008C": "Session Timestamp",
+    "6B1FC7F5": "DLC Flag *",
+    "3BF0D7EA": "Collectible Registry",
+    "473EB6FB": "City Code",
+    "E4DA7921": "Checkpoint Code",
+    "DC59B648": "Notoriety",
+    "977B3AFF": "Inventory",
+    "4FD4F76A": "Item State",
+    "12997BF7": "Item Value",
+    "24C97EC8": "Item Unknown *",
+    "47DC47DA": "Mission Memory",
+    "D4B311C4": "Mission Parent",
+    "C2285640": "Mission Log Entry",
+    "3F789DE5": "Progression Table",
+    "13B2D75E": "Progression Row",
+    "A0CBDA5F": "Progression ID",
+    "4CB5E544": "Progression Sync",
+    "F00678D4": "Progression Started Flag",
+    "F1F8D694": "Game State",
+    "DCCB44F0": "World Marker"
+  },
+  "tags": {
+    "07000B": "int32",
+    "00000B": "bool",
+    "03000B": "byte *",
+    "0A000B": "float",
+    "12000B": "location",
+    "19000B": "int + hash *",
+    "1A000B": "string",
+    "1D0A0B": "flag+count *",
+    "1D0B0B": "flag+count *",
+    "9D0A0B": "flag+count *",
+    "1D090B": "array",
+    "06000B": "int32 *",
+    "11000B": "int32 *",
+    "13000B": "16000B",
+    "16000B": "16000B"
+  },
+  "arrayItems": {
+
+  },
+  "locationCodes": {
+
+  }
+}
