@@ -24,13 +24,14 @@ jobs:
           pip install PyQt6 pyinstaller
 
       - name: Check the version matches the tag
-        shell: bash
+        shell: python
         run: |
-          TAG="${GITHUB_REF_NAME#v}"
-          VERSION="$(python -c "from file.version import __version__; print(__version__)")
-          if [ "$TAG" != "$VERSION" ]; then
-            echo "Tag $TAG does not match version.py ($VERSION)"; exit 1
-          fi
+          import os, sys
+          sys.path.insert(0, ".")
+          from file.version import __version__
+          tag = os.environ["GITHUB_REF_NAME"].lstrip("vV")
+          if tag != __version__:
+              sys.exit(f"Tag {tag} does not match file/version.py ({__version__})")
       
       - name: Build
         run: python build.py
