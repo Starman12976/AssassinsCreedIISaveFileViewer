@@ -12,7 +12,7 @@ from file.version import __version__, GITHUB_OWNER, GITHUB_REPO
 
 RELEASES_URL = f"https://api.github.com/repos/{GITHUB_OWNER}/{GITHUB_REPO}/releases/latest"
 DEFINITIONS_URL = (f"https://raw.githubusercontent.com/{GITHUB_OWNER}/{GITHUB_REPO}"
-                   f"/main/data/definitions.json")
+                   f"/master/data/definitions.json")
 TIMEOUT = 8
 
 def parseVersion(text: str) -> tuple:
